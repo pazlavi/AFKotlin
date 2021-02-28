@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AFKotlin</string>
+    <string name="devKey">4ux8wjmC9qP6qc3UWZ5Ldh</string>
+    <string name="mainTitle">AppsFlyer SDK Kotlin Example</string>
+    <string name="logIAE">in app event</string>
+    <string name="logCrossPromoEvent">cross Promotion</string>
+    <string name="conversionEmpty">ConversionData callback has not been called yet</string>
+    <string name="deepLinkEmpty">Deep link not detected</string>
+    <string name="onConversionDataSuccess">onConversionDataSuccess:\n %1$s</string>
+    <string name="onConversionDataFail">onConversionDataFail:\n %1$s</string>
+    <string name="onAppOpenAttribution">onAppOpenAttribution:\n %1$s</string>
+    <string name="onAttributionFailure">onAttributionFailure:\n %1$s</string>
+    <string name="onDeepLinking">onDeepLinking:\n %1$s</string>
+    <string name="deepLinkTitle">Deep Linking</string>
+    <string name="conversionTitle">Conversion</string>
+    <string name="directDeepLinkActivity">You Deep Linked into this activity (Direct link)</string>
+    <string name="deferredDeepLinkActivity">You Deep Linked into this activity (Deferred link)</string>
+    <string name="apiDemoTitle">API Demo Screen</string>
+    <string name="apiDemoButton">API Deme Page</string>
+    <string name="dismiss">dismiss</string>
+    <string name="openDoc">"Open Documentation "</string>
+</resources>
