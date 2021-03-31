@@ -19,4 +19,26 @@
     <string name="apiDemoButton">API Deme Page</string>
     <string name="dismiss">dismiss</string>
     <string name="openDoc">"Open Documentation "</string>
+    <string name="publicKey">public_key_from_Google_Developer_Console</string>
+    <string name="logIAEValidate">validate In App Purchase</string>
+    <string name="logSession">Log Session</string>
+    <string name="optOut">OPT Out</string>
+    <string name="optIn">OPT In</string>
+    <string name="anonymizeUserEnable">Enable Anonymize User</string>
+    <string name="anonymizeUserDisable">Disable Anonymize User</string>
+    <string name="showAFid">Show AppsFlyer ID</string>
+    <string name="performOnAppAttribution">Perform OnAppAttribution</string>
+    <string name="default_notification_channel_id">AppsFlyer_Channel</string>
+    <string name="fcm_message">"AF Push "</string>
+    <string name="fcm_message_content">AppsFlyer Push Notification Test</string>
+    <string name="PushNotificationData">Test Push Notification Data</string>
+    <string name="sendPush">"Sent push notification?"</string>
+    <string name="send">Send</string>
+    <string name="serverKey">key=AAAAN_lV8ss:APA91bGwcUuNeVCuHgAzBwSZhtsyDr8zzJNGaRgMN1anak-5CBtl83jN72iNgUMimPh_PYn0uwZzdp7DKvuB_BZ0-_i7DMht1yv6pvqQ5BH_B9p9_87_2RGdeKGUJKod_yHNHD5BgAnC</string>
+    <string name="PushDeepLink">Test Push Deep Link Path</string>
+    <string name="afLogo">AppsFLyer Logo</string>
+    <string name="afSilentPush">af-uinstall-tracking</string>
+    <string name="pushDeepLinkUrl">https://paz-sample.onelink.me/4ln7/d6aee21</string>
+    <string name="firebaseApi">https://fcm.googleapis.com/fcm/send?</string>
+    <string name="userInvite">User Invite</string>
 </resources>

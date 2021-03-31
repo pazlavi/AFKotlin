@@ -4,34 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApiDemoActivity">
+    android:paddingBottom="20dp"
+    tools:context=".activities.ApiDemoActivity">
+
+    <ImageView
+        android:id="@+id/api_IMG_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_af_logo"
+        android:contentDescription="@string/afLogo" />
 
     <TextView
+        android:layout_below="@id/api_IMG_logo"
         android:id="@+id/api_LBL_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:text="@string/apiDemoTitle"
         android:textSize="20sp" />
 
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
         android:layout_below="@+id/api_LBL_title">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:padding="15dp"
             android:orientation="vertical">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_inviteUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:text="@string/userInvite"
+                android:backgroundTint="@color/afGreen"
+                app:cornerRadius="15dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/api_BTN_inApp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:text="@string/logIAE"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afBlue"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_inAppValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afGreen"
+                android:text="@string/logIAEValidate"
                 app:cornerRadius="15dp" />
 
 
@@ -40,10 +72,76 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afBlue"
                 android:text="@string/logCrossPromoEvent"
-
                 app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_logSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afGreen"
+                android:text="@string/logSession"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_opt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afBlue"
+                android:text="@string/optOut"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_anonymizeUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afGreen"
+                android:text="@string/anonymizeUserEnable"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_afId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afBlue"
+                android:text="@string/showAFid"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_performOAOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afGreen"
+                android:text="@string/performOnAppAttribution"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_pushNotificationData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afBlue"
+                android:text="@string/PushNotificationData"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/api_BTN_pushDeepLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/afGreen"
+                android:text="@string/PushDeepLink"
+                app:cornerRadius="15dp" />
+
+
         </LinearLayout>
     </ScrollView>
+
 
 </RelativeLayout>

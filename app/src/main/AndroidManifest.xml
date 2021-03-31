@@ -8,16 +8,16 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name=".App"
+        android:name=".application.App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AFKotlin">
-        <activity android:name=".ApiDemoActivity" />
-        <activity android:name=".DirectDeepLinkActivity" />
-        <activity android:name=".DeferredDeepLinkActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.ApiDemoActivity" />
+        <activity android:name=".activities.DirectDeepLinkActivity" />
+        <activity android:name=".activities.DeferredDeepLinkActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -82,11 +82,13 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.appsflyer.FirebaseMessagingServiceListener">
+        <service android:name=".firebase.FirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <meta-data android:name="CHANNEL" android:value="myApp"/>
     </application>
 
 </manifest>
